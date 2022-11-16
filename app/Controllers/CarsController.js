@@ -24,10 +24,12 @@ export class CarsController {
     appState.on('cars', _drawCars)
     appState.on('activeCar', _drawCarForm)
     this.getCars()
-    _drawCarForm()
+    _drawCars()
   }
 
-
+  showCars() {
+    _drawCars()
+  }
   async getCars() {
     try {
       await carsService.getCars()

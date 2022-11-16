@@ -1,10 +1,10 @@
 import { CarsController } from "./Controllers/CarsController.js";
-import { HouseController } from "./Controllers/HousesController.js";
+import { HousesController } from "./Controllers/HousesController.js";
 
 class App {
-  carsController = new CarsController()
+  // carsController = new CarsController()
 
-  housesController = new HouseController()
+  housesController = new HousesController()
 }
 
 window["app"] = new App();
